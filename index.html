@@ -29,8 +29,14 @@
         </nav>
 
         <div class="auth-pill">
-          <a href="#">Falar no WhatsApp</a>
-          <a class="signup" href="#">Agendar demo</a>
+          <a
+            href="https://wa.me/5511999999999?text=Ola%2C%20quero%20agendar%20uma%20demo%20da%20Intraconnect."
+            target="_blank"
+            rel="noopener noreferrer"
+            data-track="cta_header_whatsapp"
+            >Falar no WhatsApp</a
+          >
+          <a class="signup" href="#demo" data-track="cta_header_demo">Agendar demo</a>
         </div>
       </header>
 
@@ -47,8 +53,15 @@
         </p>
 
         <div class="hero-actions">
-          <a href="#" class="btn btn-primary">Agendar demonstracao</a>
-          <a href="#" class="btn btn-secondary">Falar no WhatsApp</a>
+          <a href="#demo" class="btn btn-primary" data-track="cta_hero_demo">Agendar demonstracao</a>
+          <a
+            href="https://wa.me/5511999999999?text=Ola%2C%20quero%20falar%20com%20um%20especialista%20da%20Intraconnect."
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-track="cta_hero_whatsapp"
+            >Falar no WhatsApp</a
+          >
         </div>
 
         <div class="hero-cards">
@@ -125,7 +138,7 @@
         <div class="section-head">
           <span class="section-tag"><span class="check">OK</span> Dor vs Solucao</span>
           <h2>Menos ruido interno e mais controle operacional</h2>
-          <a href="#" class="pill-link">Agendar demonstracao</a>
+          <a href="#demo" class="pill-link" data-track="cta_dor_demo">Agendar demonstracao</a>
         </div>
 
         <div class="insight-layout">
@@ -188,7 +201,7 @@
                 <span>Ramais</span>
                 <span>Anexos</span>
               </div>
-              <a href="#" class="expense-link">Solicitar demo</a>
+              <a href="#demo" class="expense-link" data-track="cta_fluxo_demo">Solicitar demo</a>
             </article>
           </div>
         </div>
@@ -285,7 +298,7 @@
           <article class="price-card">
             <span class="price-icon">[A]</span>
             <h3>Aprovacao <small>de cadastro</small></h3>
-            <a href="#" class="btn btn-secondary">Agendar demonstracao</a>
+            <a href="#demo" class="btn btn-secondary" data-track="cta_seg_acesso_demo">Agendar demonstracao</a>
             <ul>
               <li>Admin aprova ou rejeita solicitacoes</li>
               <li>Perfis de admin e usuario separados</li>
@@ -298,7 +311,7 @@
             <span class="price-icon">[S]</span>
             <span class="best-tag">Essencial</span>
             <h3>Segmentacao <small>por contexto real</small></h3>
-            <a href="#" class="btn btn-secondary">Agendar demonstracao</a>
+            <a href="#demo" class="btn btn-secondary" data-track="cta_seg_segmentacao_demo">Agendar demonstracao</a>
             <ul>
               <li>Conteudo global para todo o grupo</li>
               <li>Conteudo por empresa, setor e funcao</li>
@@ -310,7 +323,7 @@
           <article class="price-card">
             <span class="price-icon">[P]</span>
             <h3>Publicacao <small>com controle</small></h3>
-            <a href="#" class="btn btn-secondary">Agendar demonstracao</a>
+            <a href="#demo" class="btn btn-secondary" data-track="cta_seg_publicacao_demo">Agendar demonstracao</a>
             <ul>
               <li>Posts imediatos e agendados</li>
               <li>Centro de anexos por categoria</li>
@@ -329,7 +342,7 @@
             Em uma reuniao rapida, mapeamos sua estrutura e iniciamos a
             configuracao da intranet por empresa e perfil.
           </p>
-          <a href="#" class="pill-link dark">Agendar diagnostico</a>
+          <a href="#demo" class="pill-link dark" data-track="cta_passos_demo">Agendar diagnostico</a>
         </div>
 
         <div class="testimonials-list">
@@ -352,7 +365,14 @@
         <div class="section-head">
           <span class="section-tag"><span class="check">OK</span> FAQ</span>
           <h2>Perguntas frequentes</h2>
-          <a href="#" class="pill-link">Falar no WhatsApp</a>
+          <a
+            href="https://wa.me/5511999999999?text=Ola%2C%20quero%20tirar%20duvidas%20sobre%20a%20Intraconnect."
+            class="pill-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-track="cta_faq_whatsapp"
+            >Falar no WhatsApp</a
+          >
         </div>
 
         <div class="news-grid">
@@ -395,20 +415,108 @@
         </div>
       </section>
 
+      <section class="section reveal lead-capture" id="demo">
+        <div class="section-head">
+          <span class="section-tag"><span class="check">OK</span> Demo gratuita</span>
+          <h2>Agende um diagnostico de comunicacao interna em 30 minutos</h2>
+          <a
+            href="https://wa.me/5511999999999?text=Ola%2C%20quero%20agendar%20um%20diagnostico%20de%20comunicacao%20interna."
+            class="pill-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-track="cta_demo_whatsapp"
+            >Falar no WhatsApp</a
+          >
+        </div>
+
+        <form id="lead-form" class="lead-form" novalidate>
+          <label>
+            Nome
+            <input type="text" name="nome" autocomplete="name" required />
+          </label>
+
+          <label>
+            E-mail corporativo
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+
+          <label>
+            Empresa
+            <input type="text" name="empresa" autocomplete="organization" required />
+          </label>
+
+          <label>
+            Numero de colaboradores
+            <select name="colaboradores" required>
+              <option value="">Selecione</option>
+              <option value="ate_50">Ate 50</option>
+              <option value="51_200">51 a 200</option>
+              <option value="201_500">201 a 500</option>
+              <option value="501_1000">501 a 1000</option>
+              <option value="1000_mais">Mais de 1000</option>
+            </select>
+          </label>
+
+          <label>
+            WhatsApp
+            <input type="tel" name="whatsapp" autocomplete="tel" required />
+          </label>
+
+          <label>
+            Quantas unidades ou empresas o grupo possui?
+            <select name="unidades" required>
+              <option value="">Selecione</option>
+              <option value="1">1</option>
+              <option value="2_3">2 a 3</option>
+              <option value="4_10">4 a 10</option>
+              <option value="11_mais">Mais de 10</option>
+            </select>
+          </label>
+
+          <label class="lead-full">
+            Principal desafio atual
+            <select name="desafio" required>
+              <option value="">Selecione</option>
+              <option value="comunicacao">Comunicacao interna pulverizada</option>
+              <option value="documentos">Distribuicao e historico de documentos</option>
+              <option value="acessos">Controle e aprovacao de acessos</option>
+              <option value="padronizacao">Padronizacao entre unidades</option>
+              <option value="outro">Outro desafio</option>
+            </select>
+          </label>
+
+          <div class="lead-actions lead-full">
+            <button type="submit" class="btn btn-primary" data-track="cta_form_demo">
+              Agendar demonstracao gratuita
+            </button>
+            <p id="form-feedback" role="status" aria-live="polite">
+              Retornamos em ate 1 dia util apos o envio.
+            </p>
+          </div>
+        </form>
+      </section>
+
       <footer class="footer reveal">
         <div class="footer-top">
           <div>
             <h2>Pronto para organizar a comunicacao da sua empresa?</h2>
             <div class="hero-actions">
-              <a href="#" class="btn btn-primary">Agendar demo</a>
-              <a href="#" class="btn btn-secondary">Falar com especialista</a>
+              <a href="#demo" class="btn btn-primary" data-track="cta_footer_demo">Agendar demo</a>
+              <a
+                href="https://wa.me/5511999999999?text=Ola%2C%20quero%20falar%20com%20um%20especialista%20da%20Intraconnect."
+                class="btn btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-track="cta_footer_whatsapp"
+                >Falar com especialista</a
+              >
             </div>
           </div>
           <div class="newsletter">
             <h3>Diagnostico de comunicacao interna em 30 minutos</h3>
             <div>
-              <input type="email" placeholder="Seu e-mail corporativo" />
-              <button>Quero agendar</button>
+              <input type="email" placeholder="Seu e-mail corporativo" aria-label="E-mail corporativo" />
+              <button type="button">Quero agendar</button>
             </div>
             <small>Plano de implantacao guiada para grupos multiempresa.</small>
           </div>
@@ -454,8 +562,14 @@
           </div>
           <div class="footer-links app-links">
             <h4>Atendimento</h4>
-            <a href="#">Agendar demonstracao</a>
-            <a href="#">Falar no WhatsApp</a>
+            <a href="#demo" data-track="cta_footer_link_demo">Agendar demonstracao</a>
+            <a
+              href="https://wa.me/5511999999999?text=Ola%2C%20quero%20atendimento%20sobre%20a%20Intraconnect."
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="cta_footer_link_whatsapp"
+              >Falar no WhatsApp</a
+            >
           </div>
         </div>
 
@@ -468,5 +582,6 @@
         </div>
       </footer>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

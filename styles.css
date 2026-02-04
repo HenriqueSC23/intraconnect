@@ -497,6 +497,71 @@ a {
   color: var(--card);
 }
 
+.lead-capture {
+  margin-top: 56px;
+}
+
+.lead-form {
+  margin-top: 16px;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.lead-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-subtle);
+}
+
+.lead-form input,
+.lead-form select {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 42px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.lead-form input::placeholder {
+  color: var(--text-soft);
+}
+
+.lead-form input:focus,
+.lead-form select:focus {
+  outline: none;
+  border-color: var(--dark-soft);
+  box-shadow: 0 0 0 3px rgba(var(--blue-rgb), 0.2);
+}
+
+.lead-full {
+  grid-column: 1 / -1;
+}
+
+.lead-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#form-feedback {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 12px;
+}
+
 .insight-layout {
   margin-top: 18px;
   display: grid;
@@ -1295,6 +1360,10 @@ a {
   .hero-cards,
   .pricing-grid,
   .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lead-form {
     grid-template-columns: 1fr;
   }
 
