@@ -1,0 +1,19 @@
+﻿<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1120" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F2E6D"/>
+      <stop offset="1" stop-color="#0A8FA8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0A1833"/>
+  <rect x="48" y="48" width="1104" height="534" rx="34" fill="url(#bg)"/>
+  <rect x="86" y="92" width="130" height="130" rx="28" fill="white" fill-opacity="0.16"/>
+  <text x="108" y="173" fill="white" font-size="54" font-family="Sora, Arial, sans-serif" font-weight="700">IC</text>
+  <text x="86" y="305" fill="white" font-size="86" font-family="Sora, Arial, sans-serif" font-weight="700">Intraconnect</text>
+  <text x="86" y="370" fill="#D7E5FF" font-size="34" font-family="Manrope, Arial, sans-serif" font-weight="500">
+    Intranet corporativa multiempresa
+  </text>
+  <text x="86" y="420" fill="#D7E5FF" font-size="30" font-family="Manrope, Arial, sans-serif" font-weight="400">
+    Comunicacao interna com governanca, segmentacao e escala.
+  </text>
+</svg>
